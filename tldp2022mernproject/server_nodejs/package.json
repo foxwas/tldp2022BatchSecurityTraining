@@ -1,0 +1,24 @@
+{
+  "name": "project-node-data-ap1",
+  "version": "1.0.0",
+  "description": "RESTful WS to expose CRUD access to MongoDB",
+  "main": "server.js",
+  "jest": {
+    "verbose": true
+   },
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0",
+    "mongoose-sequence": "^5.3.1"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.16"
+  }
+}
