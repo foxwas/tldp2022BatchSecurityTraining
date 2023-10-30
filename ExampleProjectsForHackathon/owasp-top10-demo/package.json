@@ -1,0 +1,23 @@
+{
+  "name": "owasp-top10-demo",
+  "version": "1.0.0",
+  "description": "A demo of some common injections in the OWASP Top 10",
+  "keywords": [
+    "owasp",
+    "top",
+    "ten",
+    "10",
+    "t10",
+    "demo"
+  ],
+  "author": "Allon Mureinik",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^3.23.3",
+    "libxmljs": "^0.19.7",
+    "node-serialize": "0.0.4",
+    "sqlite3": "^5.0.0"
+  }
+}

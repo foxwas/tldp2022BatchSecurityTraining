@@ -1,0 +1,350 @@
+body,
+html {
+  height: 100vh !important;
+  margin: 0 !important;
+  background: url(../images/background.jpg) no-repeat center top fixed;
+  /* for background shading  */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.171); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap%27");
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-header {
+  background-color: #12228f;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #ffffff;
+  text-align: center;
+  height: 23vh;
+}
+
+@media only screen and (max-width: 1300px) {
+  .admin-header {
+    height: 35vh;
+  }
+}
+.admin-header > h1 {
+  font-weight: 700;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 90%;
+  align-self: center;
+  flex-wrap: wrap;
+}
+.search-bar-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 45%;
+  align-self: center;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 7px;
+  background-color: #f0f2f5;
+  margin-top: 15px;
+ 
+}
+
+.flight-list::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* Add a thumb */
+.flight-list::-webkit-scrollbar-thumb {
+  background: gainsboro;
+  border-radius: 10px;
+}
+.flight-list::-webkit-scrollbar-thumb:hover {
+  background-color: #aaaaaa;
+}
+
+.flight-list {
+  border: 1px solid darkgray;
+  background-color: #ffffff;
+  width: 95%;
+  height: 60vh;
+  overflow: auto;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+}
+.flight-table {
+  width: 100%;
+}
+th,
+td {
+  padding: 0.5rem;
+  text-align: center !important;
+}
+tr:nth-child(even) {
+  background-color: white;
+}
+tr:nth-child(odd) {
+  background-color: #a8c9f5;
+}
+td {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .buttons{
+  display:flex;
+  gap: 5px;
+} */
+.icon {
+  color: rgb(137, 136, 143);
+}
+.icon:hover {
+  color: #14279b;
+  cursor: pointer;
+  /* color:#35619e; */
+}
+.icon-disabled {
+  color: rgb(143, 136, 136);
+}
+.icon-disabled:hover{
+  cursor :no-drop;
+}
+
+.danger:hover {
+  color: rgb(201, 6, 6);
+}
+th {
+  font-size: large;
+  color: white;
+  font-weight: 600;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #447fcc;
+}
+
+/* no touch 7gat mark */
+.add-flight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* no touch 7gat mark */
+.add-flight-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+td > input {
+  margin: 0;
+}
+.msg-header {
+  background-color: #12228f;
+  color: #ffffff;
+  text-align: center;
+}
+
+.logo-buttons-search {
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.logo-buttons {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 2rem;
+  align-self: center;
+}
+
+header-buttons-container {
+  padding-right: 1rem;
+  width: 50%;
+}
+
+.header-buttons {
+  background-color: #37a1e2;
+  width: 150px;
+  height: 6vh;
+  padding-right: 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.trip-search-results {
+  padding-top: 20px;
+  /* padding-bottom: 25px; */
+  width: 100vw;
+  height: 68vh;
+  /* border: 2px solid rgb(0, 0, 0); */
+  border-radius: 7px;
+  /* background-color: #404142; */
+  overflow: auto;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+}
+body {
+  overflow: auto;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* Add a thumb */
+body::-webkit-scrollbar-thumb {
+  background: gainsboro;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #aaaaaa;
+}
+
+.trip-search-results::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* Add a thumb */
+.trip-search-results::-webkit-scrollbar-thumb {
+  background: gainsboro;
+  border-radius: 10px;
+}
+.trip-search-results::-webkit-scrollbar-thumb:hover {
+  background-color: #aaaaaa;
+}
+
+.signin-page {
+  height: 100vh;
+  background-color: #12228f;
+
+  /* background-color: #edf0f5; */
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  /* flex-direction: ; */
+}
+
+.signin-form {
+  -webkit-box-shadow: 0 0 5px rgb(0, 0, 0);
+  box-shadow: 0 0 5px rgb(73, 73, 73);
+  border-radius: 10px;
+  height: auto;
+  width: 400px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+.signup-form {
+  height: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+}
+.v2 {
+  border-bottom: 1px solid rgb(202, 202, 202) !important;
+  width: 90%;
+}
+.signin-logo {
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+.tag-container {
+  height: 70vh;
+  flex-grow: 1;
+  width: 100vw;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+  background-color: rgba(0, 0, 0, 0.575);
+  padding: 4em;
+  border-radius: 10px;
+}
+.tag {
+  color: #ffffff;
+  font-size: 3.5em;
+  font-weight: bold;
+  /* padding-top: 12vh; */
+  padding-bottom: 0;
+  margin-bottom: -20px;
+  text-shadow: 0px -1px 12px rgba(58, 58, 58, 0.9);
+}
+
+.sub-tag {
+  font-size: 1.5rem;
+  padding-top: 15px;
+  font-weight: 400;
+}
+.my-modal {
+  height: 400px !important;
+  width: 400px !important; /* Occupy the 90% of the screen width */
+}
+.my-modal-2 {
+  height: 400px !important;
+  width: 400px !important; /* Occupy the 90% of the screen width */
+
+}
+
+
+.MuiStepIcon-text{
+  color:black;
+  background-color: black;
+}
+.MuiStepIcon-root{
+  color:black;
+ 
+}
+
+.Mui-active{
+  font-weight: 700 !important;
+}
+
+.MuiStepLabel-label{
+  color:black;
+}
+.reservation-buttons{
+  display: flex;
+  width: 30%;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.my-modal2{
+  width : auto
+}

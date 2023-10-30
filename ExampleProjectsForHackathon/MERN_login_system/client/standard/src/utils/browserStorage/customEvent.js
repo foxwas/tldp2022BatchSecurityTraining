@@ -1,0 +1,1 @@
+export const storageChangeEvent = new Event("storageChange");
